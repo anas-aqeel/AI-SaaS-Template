@@ -81,6 +81,10 @@ module.exports = {
       minWidth: {
         ...defaultTheme.width,
       },
+      transitionProperty: {
+        'height': 'height',
+        'max-height': 'max-height',
+      },
     },
   },
   plugins: [],

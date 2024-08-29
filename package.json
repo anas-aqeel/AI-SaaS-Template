@@ -49,6 +49,7 @@
     "@vercel/otel": "^1.8.3",
     "class-variance-authority": "^0.7.0",
     "lodash": "^4.17.21",
+    "lucide-react": "^0.436.0",
     "next": "^14.2.3",
     "next-compose-plugins": "^2.2.1",
     "react": "^18.3.1",
@@ -74,7 +75,7 @@
     "@storybook/blocks": "^7.5.3",
     "@storybook/nextjs": "^7.5.3",
     "@storybook/react": "^7.5.3",
-    "@storybook/test-runner": "^0.15.2",
+    "@storybook/test-runner": "^0.19.1",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",
@@ -113,7 +114,7 @@
     "ts-jest": "^29.1.1",
     "tsc": "^2.0.4",
     "typescript": "5.4.5",
-    "webpack": "5.89.0"
+    "webpack": "^5.94.0"
   },
   "engines": {
     "node": ">=20.0.0"

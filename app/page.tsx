@@ -1,8 +1,23 @@
-import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
+import React, { useState } from 'react';
+import data from './data';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import PlaceholderImage from './components/PlaceholderImage';
+import HowItWorks from './components/HowItWorks';
+import CoreFeature from './components/CoreFeature';
+import Statistics from './components/Statistics';
+import Testimonial from './components/Testimonial';
+import WritingUseCases from './components/WritingUseCases';
+import PricingPlans from './components/PricingPlans';
+import FAQs from './components/FAQs';
+import CallToAction from './components/CallToAction';
+import Footer from './components/Footer';
+import PricingContainer from "./components/PricingContainer";
 
-export const metadata: Metadata = {
+
+export const metadata: any = {
   title: "Next.js Enterprise Boilerplate",
   twitter: {
     card: "summary_large_image",
@@ -19,47 +34,43 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Web() {
+
+
+export default function Page() {
+
+
   return (
-    <>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-              Next.js Enterprise Boilerplate
-            </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
-            </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
-              Get started
-            </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
-              Deploy Now
-            </Button>
+    <div className="bg-[#111022] font-sans text-white">
+      <Header data={data.header} />
+      <Hero data={data.hero} />
+      <PlaceholderImage data={data.placeholderImage} />
+      <HowItWorks data={data.howItWorks} />
+
+      <section className="mx-auto max-w-7xl px-4">
+        {data.coreFeatures.map((feature, index) => (
+          <CoreFeature key={index} {...feature} />
+        ))}
+      </section>
+
+      <section className="bg-[#111022] py-12 font-sans text-white md:py-20">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="grid grid-cols-1 place-items-center gap-8 lg:grid-cols-3">
+            <div className="col-span-2 grid gap-5 sm:grid-cols-2">
+              <Statistics data={data.statistics} />
+              <Testimonial data={data.testimonial} />
+            </div>
+            <div className="h-full w-full rounded-md bg-gray-300 lg:row-span-2"></div> {/* Placeholder Image */}
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
-                  {singleItem.icon}
-                </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  )
+
+      <WritingUseCases data={data.writingUseCases} />
+
+     <PricingContainer />
+
+      <FAQs data={data.faqs} />
+      <CallToAction data={data.callToAction} />
+      <Footer data={data.footer} />
+    </div>
+  );
 }
