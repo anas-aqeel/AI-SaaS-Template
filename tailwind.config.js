@@ -82,8 +82,8 @@ module.exports = {
         ...defaultTheme.width,
       },
       transitionProperty: {
-        'height': 'height',
-        'max-height': 'max-height',
+        height: "height",
+        "max-height": "max-height",
       },
     },
   },

@@ -1,25 +1,31 @@
-import React from 'react';
+import React from "react"
 
 interface HeroProps {
   data: {
-    title: string;
-    highlightedWord: string;
-    primaryButton: { text: string; link: string };
-    secondaryButton: { text: string; link: string };
-  };
+    title: string
+    highlightedWord: string
+    primaryButton: { text: string; link: string }
+    secondaryButton: { text: string; link: string }
+  }
 }
 
 const Hero: React.FC<HeroProps> = ({ data }) => {
   return (
-    <div className='relative'>
-      <div style={{ animationDuration: "5s" }} className="absolute top-[58%] left-[0px] h-[40%] w-[40%] rounded-full opacity-30 bg-gradient-to-r from-[#B324D7] to-[#FE577F] blur-[114px]  animate-pulse duration-500"></div>
-      <div style={{ animationDuration: "5s" }} className="absolute bottom-[-60%] right-[0px] h-[40%] w-[40%] rounded-full opacity-30 bg-gradient-to-r from-[#B324D7] to-[#FE577F] blur-[114px]  animate-pulse duration-500"></div>
+    <div className="relative">
+      <div
+        style={{ animationDuration: "5s" }}
+        className="absolute left-0 top-[58%] size-2/5 animate-pulse rounded-full bg-gradient-to-r from-[#B324D7] to-[#FE577F] opacity-30 blur-[114px]  duration-500"
+      ></div>
+      <div
+        style={{ animationDuration: "5s" }}
+        className="absolute bottom-[-60%] right-0 size-2/5 animate-pulse rounded-full bg-gradient-to-r from-[#B324D7] to-[#FE577F] opacity-30 blur-[114px]  duration-500"
+      ></div>
 
-      <section className="relative mx-auto max-w-5xl px-4 py-16 text-center md:py-20 lg:py-24 z-50">
+      <section className="relative z-50 mx-auto max-w-5xl px-4 py-16 text-center md:py-20 lg:py-24">
         <h1 className="mb-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-          {data.title.split(' ').map((word, index) => (
-            <span key={index} className={word === data.highlightedWord ? 'text-[#fedc78]' : ''}>
-              {word}{' '}
+          {data.title.split(" ").map((word, index) => (
+            <span key={index} className={word === data.highlightedWord ? "text-[#fedc78]" : ""}>
+              {word}{" "}
             </span>
           ))}
         </h1>
@@ -37,11 +43,9 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
             {data.secondaryButton.text}
           </a>
         </div>
-
-
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

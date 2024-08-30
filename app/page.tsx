@@ -1,21 +1,20 @@
+import React, { useState } from "react"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
-import React, { useState } from 'react';
-import data from './data';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import PlaceholderImage from './components/PlaceholderImage';
-import HowItWorks from './components/HowItWorks';
-import CoreFeature from './components/CoreFeature';
-import Statistics from './components/Statistics';
-import Testimonial from './components/Testimonial';
-import WritingUseCases from './components/WritingUseCases';
-import PricingPlans from './components/PricingPlans';
-import FAQs from './components/FAQs';
-import CallToAction from './components/CallToAction';
-import Footer from './components/Footer';
-import PricingContainer from "./components/PricingContainer";
-
+import FAQs from "./components/FAQs"
+import CallToAction from "./components/CallToAction"
+import CoreFeature from "./components/CoreFeature"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import HowItWorks from "./components/HowItWorks"
+import PlaceholderImage from "./components/PlaceholderImage"
+import PricingContainer from "./components/PricingContainer"
+import PricingPlans from "./components/PricingPlans"
+import Statistics from "./components/Statistics"
+import Testimonial from "./components/Testimonial"
+import WritingUseCases from "./components/WritingUseCases"
+import data from "./data"
 
 export const metadata: any = {
   title: "Next.js Enterprise Boilerplate",
@@ -34,11 +33,7 @@ export const metadata: any = {
   },
 }
 
-
-
 export default function Page() {
-
-
   return (
     <div className="bg-[#111022] font-sans text-white">
       <Header data={data.header} />
@@ -59,18 +54,18 @@ export default function Page() {
               <Statistics data={data.statistics} />
               <Testimonial data={data.testimonial} />
             </div>
-            <div className="h-full w-full rounded-md bg-gray-300 lg:row-span-2"></div> {/* Placeholder Image */}
+            <div className="size-full rounded-md bg-gray-300 lg:row-span-2"></div> {/* Placeholder Image */}
           </div>
         </div>
       </section>
 
       <WritingUseCases data={data.writingUseCases} />
 
-     <PricingContainer />
+      <PricingContainer />
 
       <FAQs data={data.faqs} />
       <CallToAction data={data.callToAction} />
       <Footer data={data.footer} />
     </div>
-  );
+  )
 }
