@@ -13,7 +13,7 @@ const Statistics: React.FC<StatisticsProps> = ({ data }) => (
         className="group flex flex-col items-center justify-center rounded-lg bg-[#15152c] p-8 transition duration-300 ease-in-out hover:bg-[#21243e]"
       >
         <div className="mb-4">
-          <i className={`fas fa-${stat.icon} size-12 text-[#5772fd] group-hover:animate-bounce`}></i>{" "}
+          <stat.icon className={`size-12 text-[#5772fd] group-hover:animate-bounce`} />{" "}
           {/* Assuming Font Awesome is used for icons */}
         </div>
         <h4 className="mb-2 text-4xl font-bold">{stat.value}</h4>

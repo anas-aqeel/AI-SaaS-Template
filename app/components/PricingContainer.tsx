@@ -34,7 +34,7 @@ const PricingContainer = () => {
           <span className="font-semibold text-[#fedc78]">Pay Yearly</span>
           <span className="font-medium text-green-500">Save 20%</span>
         </div>
-        <PricingPlans data={data.pricingPlans} isYearly={isYearly} />
+        <PricingPlans data={data.components.pricingPlans} isYearly={isYearly} />
       </div>
     </section>
   )

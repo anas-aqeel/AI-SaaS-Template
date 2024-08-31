@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       {/* Logo and Company Name */}
       <div className="flex items-center">
         <div className="mr-3 size-10 rounded-full bg-yellow-400">
-          <img src={data.logo.src} alt={data.logo.alt} className="size-full object-contain" />
+          {/* <img src={data.logo.src} alt={data.logo.alt} className="size-full object-contain" /> */}
         </div>
         <span className="text-xl font-semibold">{data.companyName}</span>
       </div>

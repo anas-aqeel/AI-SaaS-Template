@@ -12,7 +12,7 @@ const CoreFeature: React.FC<Feature> = ({
 }) => (
   <div
     className={`my-16 flex items-center gap-4 ${
-      direction == "normal" ? "flex-col md:flex-row " : "flex-col-reverse md:flex-row-reverse"
+      direction === "normal" ? "flex-col md:flex-row " : "flex-col-reverse md:flex-row-reverse"
     }  md:gap-14`}
     key={title}
   >

@@ -50,6 +50,49 @@ export interface FAQ {
   answer: string
 }
 
+// New Types (with distinct names)
+
+export interface AboutSectionFeature {
+  icon: any
+  text: string
+  color: string
+}
+
+export interface TrustedBrand {
+  src: string
+  alt: string
+  name: string
+}
+
+export interface TeamSectionMember {
+  image: string
+  name: string
+  position: string
+  socialLinks: { platform: any; link: string }[]
+}
+
+export interface TestimonialSectionAuthor {
+  image: string
+  name: string
+  position: string
+}
+
+export interface TestimonialSection {
+  author: TestimonialSectionAuthor
+  quote: string
+  comment: string
+  platform: string
+  rating: number
+}
+
+export interface Service {
+  icon: any
+  title: string
+  description: string
+}
+
+// --- Combined Data interface ---
+
 export interface Data {
   header: {
     logo: {
@@ -63,8 +106,9 @@ export interface Data {
   hero: {
     title: string
     highlightedWord: string
-    primaryButton: Button
-    secondaryButton: Button
+    description: string
+    backgroundColor: string
+    textColor: string
   }
   placeholderImage: {
     dimensions: string
@@ -102,4 +146,69 @@ export interface Data {
     socialLinks: { platform: string; link: string }[]
     copyright: string
   }
+  // New data properties:
+  about: {
+    title: string
+    description: string
+    features: AboutSectionFeature[]
+    buttonText: string
+    placeholderImage: string
+    backgroundColor: string
+    textColor: string
+  }
+  trustedBy: {
+    title: string
+    brands: TrustedBrand[]
+    backgroundColor: string
+    textColor: string
+  }
+  team: {
+    title: string
+    description: string
+    members: TeamSectionMember[]
+    backgroundColor: string
+    textColor: string
+  }
+  testimonials: {
+    title: string
+    testimonials: TestimonialSection[]
+    backgroundColor: string
+    textColor: string
+  }
+  services: {
+    title: string
+    servicesList: Service[]
+    backgroundColor: string
+    textColor: string
+  }
+}
+export interface FormField {
+  type: string
+  id: string
+  label: string
+  placeholder: string
+}
+
+export interface ContactInfoItem {
+  icon: string
+  title: string
+  address?: string
+  email?: string
+  mailto?: string
+  description?: string
+  linkText?: string
+  linkUrl?: string
+}
+
+export interface ContactSection {
+  title: string
+  description: string
+  backgroundColor: string
+  textColor: string
+  form: {
+    fields: FormField[]
+    submitButtonText: string
+    requiredFieldsMessage: string
+  }
+  contactInfo: ContactInfoItem[]
 }

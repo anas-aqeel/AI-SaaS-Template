@@ -21,11 +21,12 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
           {/* Company Info */}
           <div className="md:col-span-3">
             <div className="mb-3 flex items-center">
-              <img
+              <div className="size-10 rounded-full bg-yellow-400 object-contain" />
+              {/* <img
                 src={data.logo.src}
                 alt={data.logo.alt}
                 className="size-10 rounded-full bg-yellow-400 object-contain"
-              />
+              /> */}
             </div>
             <h4 className="mb-4 text-xl font-semibold">{data.companyName}</h4>
             <p className="max-w-[360px] text-sm text-gray-400">{data.description}</p>
