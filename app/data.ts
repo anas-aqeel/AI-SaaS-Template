@@ -202,18 +202,7 @@ let data = {
               label: "Email",
               placeholder: "Email",
             },
-            {
-              type: "text",
-              id: "hs-tac-input-company",
-              label: "Company",
-              placeholder: "Company",
-            },
-            {
-              type: "text",
-              id: "hs-tac-input-phone",
-              label: "Phone",
-              placeholder: "Phone",
-            },
+
             {
               type: "textarea",
               id: "hs-tac-message",

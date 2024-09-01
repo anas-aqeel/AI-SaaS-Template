@@ -1,5 +1,5 @@
 import React from "react"
-import { Data, TrustedBrand } from "../../types"
+import { Data, TrustedBrand } from "../../../types"
 
 interface TrustedBySectionProps {
   data: Data["trustedBy"]

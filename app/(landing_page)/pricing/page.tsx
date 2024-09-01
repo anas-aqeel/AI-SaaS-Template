@@ -1,7 +1,7 @@
 import React from "react"
 import HeroSection from "app/components/HeroSection"
 import PricingContainer from "app/components/PricingContainer"
-import data from "app/data"
+import data from "../../data"
 
 const page = () => {
   return (

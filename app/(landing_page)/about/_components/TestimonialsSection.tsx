@@ -1,6 +1,6 @@
 import { BadgeCheck, Star } from "lucide-react"
 import React from "react"
-import { Data, TestimonialSection } from "../../types"
+import { Data, TestimonialSection } from "../../../types"
 
 interface TestimonialsSectionProps {
   data: Data["testimonials"]

@@ -1,5 +1,5 @@
 import React from "react"
-import { Data, Service } from "../../types"
+import { Data, Service } from "../../../types"
 
 interface ServicesSectionProps {
   data: Data["services"]

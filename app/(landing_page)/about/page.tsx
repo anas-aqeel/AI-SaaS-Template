@@ -1,11 +1,11 @@
 import React from "react"
+import HeroSection from "app/components/HeroSection"
 import AboutSection from "./_components/AboutSection"
 import ServicesSection from "./_components/ServicesSection"
 import TeamSection from "./_components/TeamSection"
 import TestimonialsSection from "./_components/TestimonialsSection"
 import TrustedBySection from "./_components/TrustedBySection"
-import HeroSection from "../components/HeroSection"
-import data from "../data" // Adjust the path as needed
+import data from "../../data" // Adjust the path as needed
 
 const AboutPage: React.FC = () => {
   return (

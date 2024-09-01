@@ -1,5 +1,5 @@
 import React from "react"
-import { AboutSectionFeature, Data } from "../../types"
+import { AboutSectionFeature, Data } from "../../../types"
 
 interface AboutSectionProps {
   data: Data["about"]

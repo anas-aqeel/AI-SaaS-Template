@@ -1,13 +1,13 @@
 import React from "react"
-import CoreFeature from "./components/CoreFeature"
-import Hero from "./components/Hero"
-import HowItWorks from "./components/HowItWorks"
-import PlaceholderImage from "./components/PlaceholderImage"
-import PricingContainer from "./components/PricingContainer"
-import Statistics from "./components/Statistics"
-import Testimonial from "./components/Testimonial"
-import WritingUseCases from "./components/WritingUseCases"
-import data from "./data"
+import CoreFeature from "../components/CoreFeature"
+import Hero from "../components/Hero"
+import HowItWorks from "../components/HowItWorks"
+import PlaceholderImage from "../components/PlaceholderImage"
+import PricingContainer from "../components/PricingContainer"
+import Statistics from "../components/Statistics"
+import Testimonial from "../components/Testimonial"
+import WritingUseCases from "../components/WritingUseCases"
+import data from "../data"
 
 export const metadata: any = {
   title: "Next.js Enterprise Boilerplate",

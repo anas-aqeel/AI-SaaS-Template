@@ -1,5 +1,5 @@
 import React from "react"
-import { Data, TeamSectionMember } from "../../types"
+import { Data, TeamSectionMember } from "../../../types"
 
 interface TeamSectionProps {
   data: Data["team"]

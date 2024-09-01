@@ -1,7 +1,7 @@
 import React from "react"
 import ContactFormSection from "app/components/ContactSection"
 import HeroSection from "app/components/HeroSection"
-import data from "app/data"
+import data from "../../data"
 
 const page = () => {
   return (

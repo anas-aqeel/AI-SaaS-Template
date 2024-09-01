@@ -1,9 +1,9 @@
 import "styles/tailwind.css"
-import CallToAction from "./components/CallToAction"
-import FAQs from "./components/FAQs"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import data from "./data"
+import CallToAction from "../components/CallToAction"
+import FAQs from "../components/FAQs"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import data from "../data"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
