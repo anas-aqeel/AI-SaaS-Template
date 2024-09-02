@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 import Header from "app/components/Header"
 import data from "app/data"
@@ -9,7 +10,13 @@ const layout = ({ children }: { children: React.ReactElement }) => {
       <body className="min-h-screen w-full bg-[#111022]">
         <Header data={data.components.header} />
         <div className=" relative flex min-h-[88vh] w-full items-center  justify-center font-sans">
-          <img src="/assets/bg.png" className="absolute inset-0 mx-auto size-full max-h-screen" />
+          <Image
+            alt=""
+            height={"100"}
+            width={"100"}
+            src="/assets/bg.png"
+            className="absolute inset-0 mx-auto size-full max-h-screen"
+          />
           <div className="relative z-50 w-full">{children}</div>
         </div>
       </body>

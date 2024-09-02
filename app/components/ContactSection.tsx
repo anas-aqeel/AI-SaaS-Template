@@ -1,5 +1,6 @@
 // components/ContactFormSection.tsx
 import { Briefcase, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
 import React from "react"
 import { ContactInfoItem, ContactSection, FormField } from "../types"
 
@@ -13,7 +14,13 @@ const ContactFormSection: React.FC<ContactSection> = ({
 }) => {
   return (
     <div className={`relative bg-[#07070f]`}>
-      <img src="/assets/bg.png" className="absolute inset-0 mx-auto size-full max-h-screen" />
+      <Image
+        height={"100"}
+        width={"100"}
+        alt=""
+        src="/assets/bg.png"
+        className="absolute inset-0 mx-auto size-full max-h-screen"
+      />
       <div className="relative z-50 mx-auto max-w-5xl px-4 py-10 lg:py-20 xl:px-0 ">
         {/* Title */}
         <div className="mx-auto mb-10 max-w-3xl text-center lg:mb-14">

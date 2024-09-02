@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
         <div className="flex items-center justify-between">
           <a
             className="flex-none text-xl font-semibold text-white focus:opacity-80 focus:outline-none"
-            href="#"
+            href="/"
             aria-label="Brand"
           >
             {data.companyName}

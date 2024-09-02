@@ -38,7 +38,7 @@ const AuthForm = ({ formType }: any) => {
             )}
             {isSignin && (
               <>
-                Don't have an account yet?{" "}
+                Don{`'`}t have an account yet?{" "}
                 <a
                   className="font-medium text-yellow-500 decoration-2 hover:underline focus:underline focus:outline-none"
                   href="/signup"

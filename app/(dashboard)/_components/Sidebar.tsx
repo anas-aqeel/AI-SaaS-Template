@@ -1,27 +1,27 @@
 "use client"
 import {
-  Folder,
-  Grid,
+  CircleGauge,
+  CodeXml,
+  FileCode,
+  FileText,
   Heart,
+  Image as ImageIcon,
   LogOut,
   Menu,
-  MessageSquare,
-  PieChart,
   Search,
   Settings,
-  ShoppingCart,
-  User,
+  Text,
 } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
 const menuItems = [
-  { name: "Dashboard", icon: Grid },
-  { name: "User", icon: User },
-  { name: "Messages", icon: MessageSquare },
-  { name: "Analytics", icon: PieChart },
-  { name: "File Manager", icon: Folder },
-  { name: "Order", icon: ShoppingCart },
+  { name: "Prompt Generation", icon: Text },
+  { name: "Image to HTML", icon: ImageIcon },
+  { name: "Image to Text", icon: FileText },
+  { name: "Text to HTML", icon: CodeXml },
+  { name: "HTML to JSX", icon: FileCode },
+  { name: "Code Optimization", icon: CircleGauge },
   { name: "Saved", icon: Heart },
   { name: "Setting", icon: Settings },
 ]
@@ -35,12 +35,12 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`fixed left-0 top-0 flex h-full flex-col justify-between text-nowrap bg-[#11101d] p-4 transition-all duration-500 ${
+      className={`fixed left-0 top-0 flex h-full flex-col justify-between text-nowrap border-r border-neutral-900 bg-[#000000] p-4 transition-all duration-500 lg:static ${
         isOpen ? "w-64" : "w-[74px]"
       }`}
     >
       <div>
-        <div className={`flex items-center ${isOpen ? "justify-between" : ""}`}>
+        <div className={`relative flex items-center`}>
           <div className="relative flex items-center space-x-2">
             <div
               className={`text-white transition-all duration-500 ${
@@ -50,7 +50,7 @@ const Sidebar = () => {
               <span className="text-xl font-semibold">CodingStella</span>
             </div>
           </div>
-          <button onClick={toggleSidebar} className="absolute right-7 text-white">
+          <button onClick={toggleSidebar} className="absolute right-2 text-white">
             <span className={`transition-transform duration-500 ${isOpen ? "rotate-180" : ""}`}>
               <Menu />
             </span>
@@ -61,11 +61,11 @@ const Sidebar = () => {
             <button
               className={`${
                 isOpen ? "justify-start" : ""
-              } flex w-full items-center rounded-md bg-[#1d1b31] p-2 py-3 pl-[10px] text-white hover:bg-gray-700`}
+              } flex w-full items-center rounded-md bg-neutral-800 p-2 py-3 pl-[10px] text-white transition-none hover:bg-gray-50 hover:text-black`}
             >
               <Search size={20} />
               <span
-                className={` text-sm font-medium transition-all duration-500 ${
+                className={` text-sm font-medium transition-all duration-500 hover:transition-none ${
                   isOpen ? "ml-4 max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
                 }`}
               >
@@ -78,11 +78,11 @@ const Sidebar = () => {
               <button
                 className={`${
                   isOpen ? "justify-start" : ""
-                } flex w-full items-center rounded-md p-2 pl-[11px] text-white hover:bg-gray-700`}
+                } flex w-full items-center rounded-md p-2 pl-[11px] text-white  hover:bg-gray-50 hover:text-black`}
               >
                 <item.icon size={20} />
                 <span
-                  className={`text-sm font-medium transition-all duration-500 ${
+                  className={`text-sm font-medium transition-state duration-500 ${
                     isOpen ? "ml-4 max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
                   }`}
                 >
@@ -98,7 +98,7 @@ const Sidebar = () => {
           className={`${isOpen ? "justify-start" : ""} flex w-full items-center rounded-md p-2 pl-[11px] text-white`}
         >
           <Image
-            src="/profile-image.png" // update the path to your profile image
+            src="https://avatars.githubusercontent.com/u/71166989?v=4" // update the path to your profile image
             alt="Profile"
             width={40}
             height={40}

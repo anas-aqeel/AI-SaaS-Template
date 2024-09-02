@@ -1,7 +1,7 @@
 import React from "react"
 import AuthForm from "../_component/AuthForm"
 
-const page = ({}) => {
+const page = () => {
   return <AuthForm formType="signup" />
 }
 
