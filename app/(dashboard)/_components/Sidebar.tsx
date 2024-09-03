@@ -13,39 +13,39 @@ import {
   Text,
 } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 
 const menuItems = [
-  { name: "Prompt Generation", icon: Text },
-  { name: "Image to HTML", icon: ImageIcon },
-  { name: "Image to Text", icon: FileText },
-  { name: "Text to HTML", icon: CodeXml },
-  { name: "HTML to JSX", icon: FileCode },
-  { name: "Code Optimization", icon: CircleGauge },
-  { name: "Saved", icon: Heart },
-  { name: "Setting", icon: Settings },
+  { route: "/prompt-generation", name: "Prompt Generation", icon: Text },
+  { route: "/image-to-html", name: "Image to HTML", icon: ImageIcon },
+  { route: "/image-to-text", name: "Image to Text", icon: FileText },
+  { route: "/text-to-html", name: "Text to HTML", icon: CodeXml },
+  { route: "/html-to-jsx", name: "HTML to JSX", icon: FileCode },
+  { route: "/code-optimization", name: "Code Optimization", icon: CircleGauge },
+  { route: "/saved", name: "Saved", icon: Heart },
+  { route: "/settings", name: "Setting", icon: Settings },
 ]
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
-
+  let currentRoute = usePathname()
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
   }
 
   return (
     <div
-      className={`fixed left-0 top-0 flex h-full flex-col justify-between text-nowrap border-r border-neutral-900 bg-[#000000] p-4 transition-all duration-500 lg:static ${
-        isOpen ? "w-64" : "w-[74px]"
-      }`}
+      className={`fixed left-0 top-0 flex h-full flex-col justify-between text-nowrap border-r border-neutral-900 bg-[#000000] p-4 transition-all duration-500 lg:static ${isOpen ? "w-64" : "w-[74px]"
+        }`}
     >
       <div>
         <div className={`relative flex items-center`}>
           <div className="relative flex items-center space-x-2">
             <div
-              className={`text-white transition-all duration-500 ${
-                isOpen ? "max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
-              }`}
+              className={`text-white transition-all duration-500 ${isOpen ? "max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
+                }`}
             >
               <span className="text-xl font-semibold">CodingStella</span>
             </div>
@@ -59,15 +59,13 @@ const Sidebar = () => {
         <ul className="mt-10">
           <li className="group relative">
             <button
-              className={`${
-                isOpen ? "justify-start" : ""
-              } flex w-full items-center rounded-md bg-neutral-800 p-2 py-3 pl-[10px] text-white transition-none hover:bg-gray-50 hover:text-black`}
+              className={`${isOpen ? "justify-start" : ""
+                } flex w-full items-center rounded-md bg-neutral-800 p-2 py-3 pl-[10px] text-white transition-none hover:bg-gray-50 hover:text-black`}
             >
               <Search size={20} />
               <span
-                className={` text-sm font-medium transition-all duration-500 hover:transition-none ${
-                  isOpen ? "ml-4 max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
-                }`}
+                className={` text-sm font-medium transition-all duration-500 hover:transition-none ${isOpen ? "ml-4 max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
+                  }`}
               >
                 Search
               </span>
@@ -75,20 +73,20 @@ const Sidebar = () => {
           </li>
           {menuItems.map((item, index) => (
             <li className="group relative mt-4" key={index}>
-              <button
-                className={`${
-                  isOpen ? "justify-start" : ""
-                } flex w-full items-center rounded-md p-2 pl-[11px] text-white  hover:bg-gray-50 hover:text-black`}
+              <Link
+                href={"/dashboard" + item.route}
+                className={`${isOpen ? "justify-start" : ""}
+                ${"/dashboard" + item.route == currentRoute ? "text-black bg-gray-50" : "text-white"}
+                flex w-full items-center rounded-md p-2 pl-[9.5px]   hover:bg-gray-50 hover:text-black`}
               >
                 <item.icon size={20} />
                 <span
-                  className={`text-sm font-medium transition-state duration-500 ${
-                    isOpen ? "ml-4 max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
-                  }`}
+                  className={`text-sm font-medium transition-state duration-500 ${isOpen ? "ml-4 max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
+                    }`}
                 >
                   {item.name}
                 </span>
-              </button>
+              </Link>
             </li>
           ))}
         </ul>
@@ -105,9 +103,8 @@ const Sidebar = () => {
             className={`rounded-full ${isOpen ? "opacity-100" : "opacity-0"}`}
           />
           <div
-            className={`ml-4 transition-all duration-500 ${
-              isOpen ? "max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
-            }`}
+            className={`ml-4 transition-all duration-500 ${isOpen ? "max-w-full opacity-100" : "max-w-0 overflow-hidden opacity-0"
+              }`}
           >
             <div className="text-sm font-medium">Stella Army</div>
             <div className="text-xs font-light">Web Designer</div>

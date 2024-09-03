@@ -16,8 +16,7 @@ const AuthForm = ({ formType }: any) => {
   }
 
   return (
-    <div className="mx-auto mt-7 max-w-sm rounded-lg bg-black shadow-sm">
-      <div className="p-4 sm:p-7">
+    <div className="w-full shadow-sm">
         <div className="text-center">
           <h1 className="block text-2xl font-bold text-white">
             {isSignup && "Sign up"}
@@ -165,7 +164,6 @@ const AuthForm = ({ formType }: any) => {
           </form>
         </div>
       </div>
-    </div>
   )
 }
 

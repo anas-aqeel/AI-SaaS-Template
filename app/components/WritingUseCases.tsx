@@ -13,6 +13,7 @@ const WritingUseCases: React.FC<WritingUseCasesProps> = ({ data }) => (
         Write Better Content 🚀 Faster, <br className="hidden md:block" />A Journey of Discovery & Growth
       </h3>
       <div className="grid grid-cols-1 gap-6 text-start sm:grid-cols-2 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
+        
         {data.map((useCase, index) => (
           <div key={index} className="group relative rounded-lg border border-[#3C3C77] p-8">
             <div className="mb-6 flex items-center justify-start">

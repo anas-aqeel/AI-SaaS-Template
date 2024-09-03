@@ -1,5 +1,5 @@
 import React from "react"
-import HeroSection from "app/components/HeroSection"
+import HeroSection from "@/app/components/HeroSection"
 import AboutSection from "./_components/AboutSection"
 import ServicesSection from "./_components/ServicesSection"
 import TeamSection from "./_components/TeamSection"

@@ -12,14 +12,13 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({ data }) => (
         <h3 className="mb-6 px-4 text-lg font-semibold md:text-xl">{data.title}</h3>
       </div>
 
-      <div className="flex w-full flex-wrap justify-center gap-2 sm:gap-6 md:gap-8">
+      <div className="flex w-full flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
         {data.brands.map((brand: TrustedBrand, index: number) => (
           <div
             key={index}
-            className="flex w-[48%] items-center justify-center rounded-lg bg-[#15152c] p-4 sm:w-[30%] md:w-[21.5%] lg:w-[17%]"
+            className="flex items-center justify-start rounded-lg gap-2  p-4 w-fit"
           >
-            {/* <img src={brand.src} alt={brand.alt} className="h-6 w-auto" /> */}
-            <div className="h-6 w-auto" />
+            <img src={brand.src} alt={brand.alt} className="h-12 w-auto" />
             <span className="ml-2 text-sm font-medium text-white">{brand.name}</span>
           </div>
         ))}

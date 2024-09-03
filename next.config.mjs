@@ -1,33 +1,15 @@
-import withBundleAnalyzer from "@next/bundle-analyzer";
-import withPlugins from "next-compose-plugins";
-import { env } from "./env.mjs";
-
-/**
- * @type {import('next').NextConfig}
- */
-const config = withPlugins(
-  [[withBundleAnalyzer({ enabled: env.ANALYZE })]],
-  {
-    reactStrictMode: true,
-
-    logging: {
-      fetches: {
-        fullUrl: true,
-      },
-    },
-    experimental: { instrumentationHook: true },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
     images: {
-      domains: ["avatars.githubusercontent.com"], // Add this line
-    },
-    rewrites() {
-      return [
-        { source: "/healthz", destination: "/api/health" },
-        { source: "/api/healthz", destination: "/api/health" },
-        { source: "/health", destination: "/api/health" },
-        { source: "/ping", destination: "/api/health" },
-      ];
-    },
-  }
-);
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'avatars.githubusercontent.com',
+            port: '',
+            pathname: '/u/**',
+          },
+        ],
+      }
+};
 
-export default config;
+export default nextConfig;

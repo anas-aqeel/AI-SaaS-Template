@@ -372,37 +372,37 @@ let data = {
       title: "Trusted by 10.8k+ teams, agencies and freelancers.",
       brands: [
         {
-          src: "trustpilot-logo.svg",
+          src: "https://static.vecteezy.com/system/resources/previews/005/076/592/non_2x/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg",
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "trustpilot-logo.svg",
+          src: "https://img.freepik.com/premium-photo/blue-white-sign-that-says-z-it_1136070-1643.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1722988800&semt=ais_hybrid",
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "trustpilot-logo.svg",
+          src: "https://marketplace.canva.com/EAFMNm9ybqQ/1/0/1600w/canva-gold-luxury-initial-circle-logo-qRQJCijq_Jw.jpg",
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "trustpilot-logo.svg",
+          src: "https://marketplace.canva.com/EAF65EWbuV0/4/0/1600w/canva-black-and-blue-simple-creative-illustrative-dragons-e-sport-logo-NO64HUH8vCA.jpg",
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "trustpilot-logo.svg",
+          src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png",
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "trustpilot-logo.svg",
+          src: "https://bcassetcdn.com/public/blog/wp-content/uploads/2022/12/08175139/colored-tulip-logo-design-by-lelevien-dribbble.png",
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "vertigo-logo.svg",
+          src: "https://media.istockphoto.com/id/1313644269/vector/gold-and-silver-circle-star-logo-template.jpg?s=612x612&w=0&k=20&c=hDqCI9qTkNqNcKa6XS7aBim7xKz8cZbnm80Z_xiU2DI=",
           alt: "Vertigo Logo",
           name: "Vertigo",
         },

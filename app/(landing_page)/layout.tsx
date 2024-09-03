@@ -1,4 +1,4 @@
-import "styles/tailwind.css"
+import "@/app/styles/tailwind.css"
 import CallToAction from "../components/CallToAction"
 import FAQs from "../components/FAQs"
 import Footer from "../components/Footer"

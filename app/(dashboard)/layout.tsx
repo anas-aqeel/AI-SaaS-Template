@@ -1,5 +1,5 @@
 import React from "react"
-import "styles/tailwind.css"
+import "@/app/styles/tailwind.css"
 import Header from "./_components/Header"
 import Sidebar from "./_components/Sidebar"
 

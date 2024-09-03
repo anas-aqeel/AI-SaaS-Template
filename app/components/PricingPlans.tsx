@@ -1,5 +1,6 @@
 import React from "react"
 import { PricingPlan } from "../types"
+import { CheckCircle } from "lucide-react"
 
 interface PricingPlansProps {
   data: PricingPlan[]
@@ -11,26 +12,29 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ data, isYearly }) => (
     {data.map((plan) => (
       <div
         key={plan.name}
-        className={`rounded-lg border border-[#3C3C77] bg-[#0F0F24] p-8 text-start transition duration-300 ease-in-out hover:border-[#ACDA49] hover:shadow-lg ${
-          plan.popular ? "relative" : ""
-        }`}
+        className={`rounded-lg border border-yellow-400 bg-[#0F0F24] p-8 text-start transition duration-300 ease-in-out hover:border-green-500 hover:shadow-lg ${plan.popular ? "relative" : ""
+          }`}
       >
         {plan.popular && (
-          <span className="absolute right-2 top-2 rounded-md bg-[#fedc78] px-2 py-1 text-xs font-bold">Popular</span>
+          <span className="absolute right-2 top-2 rounded-md bg-yellow-500 px-2 py-1 text-xs font-bold">Popular</span>
         )}
-        <h3 className="mb-4 text-2xl font-bold text-[#5772fd] md:text-3xl">{plan.name}</h3>
-        <p className="mb-4 text-5xl font-bold text-white md:text-6xl">
+        <h3 className="mb-8 text-xl font-medium text-yellow-500 text-center">{plan.name}</h3>
+        <p className="mb-4 font-semibold text-white text-4xl text-center">
           ${isYearly ? (parseFloat(plan.price) * 9.6).toFixed(0) : plan.price}
         </p>
-        <button className="mb-4 rounded-md border border-[#3C3C77] bg-[#15152c] px-6 py-3 font-semibold text-white transition duration-300 ease-in-out hover:bg-[#ACDA49]">
-          {plan.buttonText}
-        </button>
-        <p className="mb-6 text-lg font-bold text-gray-50">{plan.billingInfo}</p>
-        <ul className="mt-5 list-inside list-disc space-y-2 text-base font-semibold text-gray-50">
+       
+        <p className="mb-6 text-base text-center font-medium text-gray-500">{plan.billingInfo}</p>
+        <ul className="mb-5 list-none space-y-2  font-medium text-sm text-gray-100">
           {plan.features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <li key={index} className="flex items-center gap-2">
+
+              <CheckCircle className="text-yellow-500" size={20} />
+              {feature}</li>
           ))}
         </ul>
+        <button className="mb-4 w-full text-center rounded-md border border-yellow-400 hover:border-green-500  px-6 py-3 font-semibold text-white transition duration-300 ease-in-out hover:scale-105">
+          {plan.buttonText}
+        </button>
       </div>
     ))}
   </div>
