@@ -7,7 +7,7 @@ const CoreFeature: React.FC<Feature> = ({
   description,
   features,
   buttonText,
-  imageDimensions,
+  image,
   direction = "normal",
 }) => (
   <div
@@ -39,9 +39,7 @@ const CoreFeature: React.FC<Feature> = ({
     </div>
 
     <div className="w-full md:w-1/2">
-      <div className="flex h-[455px] w-full items-center justify-center rounded-md bg-gray-200 text-4xl font-bold">
-        {imageDimensions}
-      </div>
+      <img src={image.src} alt={image.alt} className="flex h-auto w-full items-center justify-center rounded-md bg-gray-200 text-4xl font-bold" />
     </div>
   </div>
 )

@@ -26,8 +26,8 @@ const TeamSection: React.FC<TeamSectionProps> = ({ data }) => {
                 <div className="flex items-center gap-x-4">
                   <img
                     className="rounded-full w-20 h-20"
-                    src={member.image}
-                    alt={member.name}
+                    src={member.image.src}
+                    alt={member.image.alt}
                   />
                   <div className="grow">
                     <h3 className="font-medium text-neutral-200">{member.name}</h3>

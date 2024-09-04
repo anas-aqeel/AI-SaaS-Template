@@ -24,9 +24,7 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ data }) => {
           {data.steps.map((step, index) => (
             <div key={index} className="group h-fit rounded-lg border border-[#3C3C77] bg-[#111022]">
               <div className="p-3">
-                <div className="mb-6 flex h-[220px] w-full items-center justify-center rounded-md bg-gray-300 text-4xl font-bold">
-                  {step.imageDimensions}
-                </div>
+                <img src={step.image.src} alt={step.image.alt} className="mb-6 flex h-auto w-full items-center justify-center rounded-md bg-gray-300 text-4xl font-bold" />
               </div>
               <div className="relative rounded-b-lg bg-[#15152c] px-4 py-6 text-center">
                 <h3 className="mb-4 text-xl font-bold md:text-xl">{step.title}</h3>

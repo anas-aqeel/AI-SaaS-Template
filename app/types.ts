@@ -1,3 +1,7 @@
+interface Image {
+  src: string
+  alt: string
+}
 export interface NavLink {
   text: string
   link: string
@@ -14,12 +18,12 @@ export interface Feature {
   description: string
   features: string[]
   buttonText: string
-  imageDimensions: string
+  image: Image
   direction: string
 }
 
 export interface HowItWorkStep {
-  imageDimensions: string
+  image: Image
   title: string
   description: string
 }
@@ -65,14 +69,14 @@ export interface TrustedBrand {
 }
 
 export interface TeamSectionMember {
-  image: string
+  image: Image
   name: string
   position: string
   socialLinks: { platform: any; link: string }[]
 }
 
 export interface TestimonialSectionAuthor {
-  image: string
+  image: Image
   name: string
   position: string
 }
@@ -110,9 +114,7 @@ export interface Data {
     backgroundColor: string
     textColor: string
   }
-  placeholderImage: {
-    dimensions: string
-  }
+  image: Image
   howItWorks: {
     title: string
     highlightedWord: string
@@ -152,7 +154,7 @@ export interface Data {
     description: string
     features: AboutSectionFeature[]
     buttonText: string
-    placeholderImage: string
+    image: Image
     backgroundColor: string
     textColor: string
   }

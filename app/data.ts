@@ -29,7 +29,9 @@ let data = {
           link: "#",
         },
       },
-      placeholderImage: {
+      image: {
+        src: "https://www.figma.com/community/thumbnail?resource_id=747985167520967365&resource_type=plugin",
+        alt: "",
         dimensions: "1084x569",
       },
       howItWorks: {
@@ -37,19 +39,28 @@ let data = {
         highlightedWord: "Enhances",
         steps: [
           {
-            imageDimensions: "392x220",
+            image: {
+              src: "https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_639ac4f9dc13a1698627681a_Main_Image_063ee2704f.jpg",
+              alt: ""
+            },
             title: "Convert Figma Designs to Tailwind HTML",
             description:
               "Streamline your design-to-code process by converting Figma designs directly into responsive Tailwind HTML.",
           },
           {
-            imageDimensions: "392x220",
+            image: {
+              src: "https://cdn.analyticsvidhya.com/wp-content/uploads/2024/02/Blackbox-ai-01-01-01-scaled.jpg",
+              alt: ""
+            },
             title: "Transform HTML to React Components",
             description:
               "Easily convert your static HTML into dynamic, reusable React components, reducing development time.",
           },
           {
-            imageDimensions: "392x220",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEiuCbWlOqTnLlnvi-qmKyedpMgTyWGVtqrLcxuYKmc3jke3gTVovEEWsq2nviaRxmgN8&usqp=CAU",
+              alt: ""
+            },
             title: "Optimize and Generate Code",
             description:
               "Use AI to optimize your existing code and generate new, efficient code snippets tailored to your needs.",
@@ -67,7 +78,10 @@ let data = {
             "Optimize your code with AI-driven recommendations.",
           ],
           buttonText: "Start Optimizing →",
-          imageDimensions: "596X455",
+          image: {
+            src: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/323897865/original/be82b8ac55339792612bebbbc94c6562e9992b4b/convert-figma-or-psd-to-html-and-tailwind-css.png",
+            alt: ""
+          },
           direction: "normal",
         },
         {
@@ -76,7 +90,10 @@ let data = {
           description:
             "Generate AI-driven prompts and images that enhance your creative projects and marketing efforts.",
           buttonText: "Explore AI Creativity →",
-          imageDimensions: "596X455",
+          image: {
+            src: "https://i.ytimg.com/vi/eMzYXofcYNg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCzDH2ODMOUmhREH565AGbwTsm9pw",
+            alt: ""
+          },
           direction: "reverse",
           features: [],
         },
@@ -90,7 +107,10 @@ let data = {
             "Transform and optimize code with ease.",
           ],
           buttonText: "Get Started →",
-          imageDimensions: "596X455",
+          image: {
+            src: "https://composio.dev/wp-content/uploads/2024/05/intro-1024x512.jpg.webp",
+            alt: ""
+          },
           direction: "normal",
         },
       ],
@@ -170,7 +190,10 @@ let data = {
           },
         ],
         buttonText: "Get Started →",
-        placeholderImage: "your-image.jpg",
+        image: {
+          src: "https://i.ytimg.com/vi/Vox3xNkbd_Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBJ6Mh1BVih8f6o3GrbhF7efuQxgA",
+          alt: ""
+        },
         backgroundColor: "#111022",
         textColor: "white",
       },
@@ -300,7 +323,10 @@ let data = {
       testimonials: [
         {
           author: {
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              alt: ""
+            },
             name: "Dianne Russell",
             position: "Content Creator",
           },
@@ -311,7 +337,10 @@ let data = {
         },
         {
           author: {
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              alt: ""
+            },
             name: "Dianne Russell",
             position: "Content Creator",
           },
@@ -322,7 +351,10 @@ let data = {
         },
         {
           author: {
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              alt: ""
+            },
             name: "Dianne Russell",
             position: "Content Creator",
           },
@@ -333,7 +365,10 @@ let data = {
         },
         {
           author: {
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              alt: ""
+            },
             name: "Dianne Russell",
             position: "Content Creator",
           },
@@ -344,7 +379,10 @@ let data = {
         },
         {
           author: {
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              alt: ""
+            },
             name: "Dianne Russell",
             position: "Content Creator",
           },
@@ -355,7 +393,10 @@ let data = {
         },
         {
           author: {
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+            image: {
+              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              alt: ""
+            },
             name: "Dianne Russell",
             position: "Content Creator",
           },
@@ -417,7 +458,10 @@ let data = {
       members: [
         {
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            alt: ""
+          },
           name: "Martin Vaccaro",
           position: "Game Player",
           socialLinks: [
@@ -441,7 +485,10 @@ let data = {
         },
         {
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            alt: ""
+          },
           name: "Martin Vaccaro",
           position: "Game Player",
           socialLinks: [
@@ -465,7 +512,10 @@ let data = {
         },
         {
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            alt: ""
+          },
           name: "Martin Vaccaro",
           position: "Game Player",
           socialLinks: [
@@ -489,7 +539,10 @@ let data = {
         },
         {
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            alt: ""
+          },
           name: "Martin Vaccaro",
           position: "Game Player",
           socialLinks: [
@@ -513,7 +566,10 @@ let data = {
         },
         {
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            alt: ""
+          },
           name: "Martin Vaccaro",
           position: "Game Player",
           socialLinks: [
@@ -537,7 +593,10 @@ let data = {
         },
         {
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+          {
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            alt: ""
+          },
           name: "Martin Vaccaro",
           position: "Game Player",
           socialLinks: [

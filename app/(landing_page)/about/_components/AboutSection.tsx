@@ -48,14 +48,13 @@ const AboutSection: React.FC<AboutSectionProps> = ({ data }) => {
 
           {/* Image Placeholder */}
           <div className="w-full md:w-3/5">
-            <div className="h-[60vh] w-full rounded-md bg-gray-100 shadow-md"></div>
-            {/* If you have an image, use this: 
+            {/* <div className="h-[60vh] w-full rounded-md bg-gray-100 shadow-md"></div> */}
             <img 
-              src={data.placeholderImage} 
+              src={data.image.src} 
               alt="About Section Illustration" 
-              className="rounded-md shadow-lg" 
+              className="rounded-md shadow-lg w-full h-auto" 
             /> 
-            */}
+           
           </div>
         </div>
       </div>
