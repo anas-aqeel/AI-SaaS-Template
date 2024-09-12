@@ -1,10 +1,11 @@
 import React from "react"
 import { Button, NavLink } from "../types" // Adjust the import path as necessary
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
 interface HeaderProps {
   data: {
-    logo: { src: string; alt: string }
+    logo: { src: StaticImageData; alt: string }
     companyName: string
     navLinks: NavLink[]
     buttons: Button[]

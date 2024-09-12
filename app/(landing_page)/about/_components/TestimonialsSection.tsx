@@ -2,6 +2,7 @@ import { BadgeCheck, Star } from "lucide-react"
 import React from "react"
 import { Data, TestimonialSection } from "../../../types"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import Image from "next/image"
 
 interface TestimonialsSectionProps {
   data: Data["testimonials"]
@@ -25,7 +26,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ data }) => (
             <CarouselItem key={index} className="basis-[100%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <div key={index} className="rounded-lg bg-[#15152c] p-8 transition duration-300 ease-in-out hover:shadow-lg">
                 <div className="mb-4 flex items-start">
-                  <img
+                  <Image
                     src={testimonial.author.image.src}
                     alt={testimonial.author.name}
                     className="mr-4 size-12 rounded-full object-cover"

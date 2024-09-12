@@ -1,11 +1,12 @@
 import React from "react"
 import { NavLink } from "../types"
 import Link from "next/link"
+import Image, { StaticImageData } from "next/image"
 
 interface FooterProps {
   data: {
     companyName: string
-    logo: { src: string; alt: string }
+    logo: { src: StaticImageData; alt: string }
     description: string
     companyLinks: NavLink[]
     resourceLinks: NavLink[]
@@ -22,12 +23,11 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
           {/* Company Info */}
           <div className="md:col-span-3">
             <div className="mb-3 flex items-center">
-              <div className="size-10 rounded-full bg-yellow-400 object-contain" />
-              {/* <img
+              <Image
                 src={data.logo.src}
                 alt={data.logo.alt}
                 className="size-10 rounded-full bg-yellow-400 object-contain"
-              /> */}
+              />
             </div>
             <h4 className="mb-4 text-xl font-semibold">{data.companyName}</h4>
             <p className="max-w-[360px] text-sm text-gray-400">{data.description}</p>

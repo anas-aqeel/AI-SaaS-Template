@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react"
 
 interface PlaceholderImageProps {
-  data: { src: string; alt: string }
+  data: { src: StaticImageData; alt: string }
 }
 
 const PlaceholderImage: React.FC<PlaceholderImageProps> = ({ data }) => {
