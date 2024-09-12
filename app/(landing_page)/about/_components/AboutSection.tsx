@@ -1,5 +1,6 @@
 import React from "react"
 import { AboutSectionFeature, Data } from "../../../types"
+import Image from "next/image"
 
 interface AboutSectionProps {
   data: Data["about"]
@@ -49,7 +50,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ data }) => {
           {/* Image Placeholder */}
           <div className="w-full md:w-3/5">
             {/* <div className="h-[60vh] w-full rounded-md bg-gray-100 shadow-md"></div> */}
-            <img 
+            <Image
+              placeholder="blur"
               src={data.image.src} 
               alt="About Section Illustration" 
               className="rounded-md shadow-lg w-full h-auto" 

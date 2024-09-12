@@ -14,6 +14,21 @@ import {
   Twitter,
 } from "lucide-react"
 
+import headerImg from "../public/images/header.png" 
+import blackboxImg from "../public/images/blackbox.jpg" 
+import codeImg from "../public/images/code.png" 
+import companyImg from "../public/images/company.jpg" 
+import company2Img from "../public/images/company2.webp" 
+import company3Img from "../public/images/company3.webp" 
+import composeImg from "../public/images/compose.webp" 
+import featureImg from "../public/images/feature.jpg" 
+import figmaToReact from "../public/images/figma-to-react.webp" 
+import generatorImg from "../public/images/generator.jpg" 
+import logoImg from "../public/images/logo.webp" 
+import strappiImg from "../public/images/strappi.jpg" 
+import userImg from "../public/images/user.jpg" 
+import user2Img from "../public/images/user2.jpg" 
+
 let data = {
   page: {
     home: {
@@ -30,17 +45,17 @@ let data = {
         },
       },
       image: {
-        src: "https://www.figma.com/community/thumbnail?resource_id=747985167520967365&resource_type=plugin",
+        src: headerImg,
         alt: "",
         dimensions: "1084x569",
       },
       howItWorks: {
-        title: "How Rain.ai Enhances Your Workflow",
+        title: "How Wind.AI Enhances Your Workflow",
         highlightedWord: "Enhances",
         steps: [
           {
             image: {
-              src: "https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_639ac4f9dc13a1698627681a_Main_Image_063ee2704f.jpg",
+              src: strappiImg,
               alt: ""
             },
             title: "Convert Figma Designs to Tailwind HTML",
@@ -49,7 +64,7 @@ let data = {
           },
           {
             image: {
-              src: "https://cdn.analyticsvidhya.com/wp-content/uploads/2024/02/Blackbox-ai-01-01-01-scaled.jpg",
+              src: blackboxImg,
               alt: ""
             },
             title: "Transform HTML to React Components",
@@ -58,7 +73,7 @@ let data = {
           },
           {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEiuCbWlOqTnLlnvi-qmKyedpMgTyWGVtqrLcxuYKmc3jke3gTVovEEWsq2nviaRxmgN8&usqp=CAU",
+              src: figmaToReact,
               alt: ""
             },
             title: "Optimize and Generate Code",
@@ -71,7 +86,7 @@ let data = {
         {
           title: "Boost Your Development Efficiency",
           highlightedWord: "Efficiency",
-          description: "Rain.ai combines powerful AI tools to accelerate your workflow, from design to deployment.",
+          description: "Wind.AI combines powerful AI tools to accelerate your workflow, from design to deployment.",
           features: [
             "Convert Figma designs to Tailwind HTML effortlessly.",
             "Transform HTML to React components automatically.",
@@ -79,7 +94,7 @@ let data = {
           ],
           buttonText: "Start Optimizing →",
           image: {
-            src: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/323897865/original/be82b8ac55339792612bebbbc94c6562e9992b4b/convert-figma-or-psd-to-html-and-tailwind-css.png",
+            src: codeImg,
             alt: ""
           },
           direction: "normal",
@@ -91,7 +106,7 @@ let data = {
             "Generate AI-driven prompts and images that enhance your creative projects and marketing efforts.",
           buttonText: "Explore AI Creativity →",
           image: {
-            src: "https://i.ytimg.com/vi/eMzYXofcYNg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCzDH2ODMOUmhREH565AGbwTsm9pw",
+            src: featureImg,
             alt: ""
           },
           direction: "reverse",
@@ -100,7 +115,7 @@ let data = {
         {
           title: "Simplify Complex Workflows",
           highlightedWord: "Simplify",
-          description: "Rain.ai reduces the complexity of your development tasks, allowing you to focus on innovation.",
+          description: "Wind.AI reduces the complexity of your development tasks, allowing you to focus on innovation.",
           features: [
             "AI-powered tools for streamlined development.",
             "Generate high-quality, AI-created images.",
@@ -108,7 +123,7 @@ let data = {
           ],
           buttonText: "Get Started →",
           image: {
-            src: "https://composio.dev/wp-content/uploads/2024/05/intro-1024x512.jpg.webp",
+            src: composeImg,
             alt: ""
           },
           direction: "normal",
@@ -118,7 +133,7 @@ let data = {
         {
           icon: Clock,
           value: "70%",
-          description: "Time saved on design-to-code conversion with Rain.ai.",
+          description: "Time saved on design-to-code conversion with Wind.AI.",
         },
         {
           icon: ChartBar,
@@ -128,7 +143,7 @@ let data = {
       ],
       testimonial: {
         quote:
-          "“Rain.ai has completely transformed our development process. The AI tools are intuitive and save us so much time. Highly recommended!”",
+          "“Wind.AI has completely transformed our development process. The AI tools are intuitive and save us so much time. Highly recommended!”",
         author: "- Alex Johnson, Frontend Developer",
       },
       writingUseCases: [
@@ -191,7 +206,7 @@ let data = {
         ],
         buttonText: "Get Started →",
         image: {
-          src: "https://i.ytimg.com/vi/Vox3xNkbd_Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBJ6Mh1BVih8f6o3GrbhF7efuQxgA",
+          src: generatorImg,
           alt: ""
         },
         backgroundColor: "#111022",
@@ -272,10 +287,10 @@ let data = {
   components: {
     header: {
       logo: {
-        src: "your-logo.png",
-        alt: "Rain.ai Logo",
+        src: logoImg,
+        alt: "Wind.AI Logo",
       },
-      companyName: "Rain.ai",
+      companyName: "Wind.AI",
       navLinks: [
         { text: "Home", link: "/" },
         { text: "About", link: "/about" },
@@ -324,7 +339,7 @@ let data = {
         {
           author: {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              src: userImg,
               alt: ""
             },
             name: "Dianne Russell",
@@ -338,7 +353,7 @@ let data = {
         {
           author: {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              src: userImg,
               alt: ""
             },
             name: "Dianne Russell",
@@ -352,7 +367,7 @@ let data = {
         {
           author: {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              src: userImg,
               alt: ""
             },
             name: "Dianne Russell",
@@ -366,7 +381,7 @@ let data = {
         {
           author: {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              src: userImg,
               alt: ""
             },
             name: "Dianne Russell",
@@ -380,7 +395,7 @@ let data = {
         {
           author: {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              src: userImg,
               alt: ""
             },
             name: "Dianne Russell",
@@ -394,7 +409,7 @@ let data = {
         {
           author: {
             image: {
-              src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s",
+              src: userImg,
               alt: ""
             },
             name: "Dianne Russell",
@@ -413,37 +428,37 @@ let data = {
       title: "Trusted by 10.8k+ teams, agencies and freelancers.",
       brands: [
         {
-          src: "https://static.vecteezy.com/system/resources/previews/005/076/592/non_2x/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg",
+          src: userImg,
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "https://img.freepik.com/premium-photo/blue-white-sign-that-says-z-it_1136070-1643.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1722988800&semt=ais_hybrid",
+          src: userImg,
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "https://marketplace.canva.com/EAFMNm9ybqQ/1/0/1600w/canva-gold-luxury-initial-circle-logo-qRQJCijq_Jw.jpg",
+          src: company2Img,
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "https://marketplace.canva.com/EAF65EWbuV0/4/0/1600w/canva-black-and-blue-simple-creative-illustrative-dragons-e-sport-logo-NO64HUH8vCA.jpg",
+          src: company3Img,
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png",
+          src: company3Img,
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "https://bcassetcdn.com/public/blog/wp-content/uploads/2022/12/08175139/colored-tulip-logo-design-by-lelevien-dribbble.png",
+          src: company3Img,
           alt: "Trustpilot Logo",
           name: "Trustpilot",
         },
         {
-          src: "https://media.istockphoto.com/id/1313644269/vector/gold-and-silver-circle-star-logo-template.jpg?s=612x612&w=0&k=20&c=hDqCI9qTkNqNcKa6XS7aBim7xKz8cZbnm80Z_xiU2DI=",
+          src: company3Img,
           alt: "Vertigo Logo",
           name: "Vertigo",
         },
@@ -459,7 +474,7 @@ let data = {
         {
           image:
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            src: user2Img,
             alt: ""
           },
           name: "Martin Vaccaro",
@@ -486,7 +501,7 @@ let data = {
         {
           image:
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            src: user2Img,
             alt: ""
           },
           name: "Martin Vaccaro",
@@ -513,7 +528,7 @@ let data = {
         {
           image:
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            src: user2Img,
             alt: ""
           },
           name: "Martin Vaccaro",
@@ -540,7 +555,7 @@ let data = {
         {
           image:
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            src: user2Img,
             alt: ""
           },
           name: "Martin Vaccaro",
@@ -567,7 +582,7 @@ let data = {
         {
           image:
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            src: user2Img,
             alt: ""
           },
           name: "Martin Vaccaro",
@@ -594,7 +609,7 @@ let data = {
         {
           image:
           {
-            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiM_M4iw0OVNLm2NMZxkBwNZxqMTSVyojBMTqr4aV-uCdRCmL",
+            src: user2Img,
             alt: ""
           },
           name: "Martin Vaccaro",
@@ -659,13 +674,13 @@ let data = {
       },
     ],
     footer: {
-      companyName: "Rain.ai",
+      companyName: "Wind.AI",
       logo: {
-        src: "your-logo.png",
-        alt: "Rain.ai Logo",
+        src: logoImg,
+        alt: "Wind.AI Logo",
       },
       description:
-        "Rain.ai empowers developers and designers with AI-driven tools to optimize workflows and unleash creativity.",
+        "Wind.AI empowers developers and designers with AI-driven tools to optimize workflows and unleash creativity.",
       companyLinks: [
         { text: "Sign In", link: "#" },
         { text: "Register", link: "#" },
@@ -688,18 +703,18 @@ let data = {
     },
     faqs: [
       {
-        question: "What is Rain.ai?",
+        question: "What is Wind.AI?",
         answer:
-          "Rain.ai is a platform offering AI-powered tools to streamline development processes, including design conversion, code transformation, and content generation.",
+          "Wind.AI is a platform offering AI-powered tools to streamline development processes, including design conversion, code transformation, and content generation.",
       },
       {
-        question: "How do I get started with Rain.ai?",
+        question: "How do I get started with Wind.AI?",
         answer: "Sign up for a free account and explore the features. Upgrade anytime to access more advanced tools.",
       },
       {
         question: "Is there a free trial available?",
         answer:
-          "Yes, Rain.ai offers a free plan with limited features so you can explore the platform before upgrading.",
+          "Yes, Wind.AI offers a free plan with limited features so you can explore the platform before upgrading.",
       },
       {
         question: "Can I upgrade or downgrade my plan at any time?",
@@ -716,14 +731,14 @@ let data = {
           "Free users get basic support, while Pro and Enterprise users enjoy priority support and access to a dedicated account manager.",
       },
       {
-        question: "How secure is my data on Rain.ai?",
+        question: "How secure is my data on Wind.AI?",
         answer:
           "We prioritize security, using industry-standard encryption and compliance protocols to safeguard your data.",
       },
     ],
     callToAction: {
       trialInfo: "14-Day Free Trial",
-      title: "Transform Your Development Process with Rain.ai",
+      title: "Transform Your Development Process with Wind.AI",
       highlightedWord: "Transform",
       description:
         "Experience the power of AI in your workflow. Sign up today and start optimizing your development process. No Credit Card Required.",

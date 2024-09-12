@@ -1,5 +1,7 @@
+import { StaticImageData } from "next/image"
+
 interface Image {
-  src: string
+  src: StaticImageData
   alt: string
 }
 export interface NavLink {
@@ -63,7 +65,7 @@ export interface AboutSectionFeature {
 }
 
 export interface TrustedBrand {
-  src: string
+  src: StaticImageData
   alt: string
   name: string
 }
@@ -100,7 +102,7 @@ export interface Service {
 export interface Data {
   header: {
     logo: {
-      src: string
+      src: StaticImageData
       alt: string
     }
     companyName: string
@@ -139,7 +141,7 @@ export interface Data {
   footer: {
     companyName: string
     logo: {
-      src: string
+      src: StaticImageData
       alt: string
     }
     description: string

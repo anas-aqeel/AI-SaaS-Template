@@ -1,5 +1,6 @@
 import React from "react"
 import { Data, TrustedBrand } from "../../../types"
+import Image from "next/image"
 
 interface TrustedBySectionProps {
   data: Data["trustedBy"]
@@ -18,7 +19,7 @@ const TrustedBySection: React.FC<TrustedBySectionProps> = ({ data }) => (
             key={index}
             className="flex items-center justify-start rounded-lg gap-2  p-4 w-fit"
           >
-            <img src={brand.src} alt={brand.alt} className="h-12 w-auto" />
+            <Image placeholder="blur" src={brand.src} alt={brand.alt} className="h-12 w-auto" />
             <span className="ml-2 text-sm font-medium text-white">{brand.name}</span>
           </div>
         ))}

@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    
+  },
     images: {
         remotePatterns: [
           {
@@ -8,6 +11,7 @@ const nextConfig = {
             port: '',
             pathname: '/u/**',
           },
+          
         ],
       }
 };

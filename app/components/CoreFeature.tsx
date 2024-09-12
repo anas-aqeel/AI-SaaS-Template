@@ -1,5 +1,6 @@
 import React from "react"
 import { Feature } from "../types"
+import Image from "next/image"
 
 const CoreFeature: React.FC<Feature> = ({
   title,
@@ -39,7 +40,7 @@ const CoreFeature: React.FC<Feature> = ({
     </div>
 
     <div className="w-full md:w-1/2">
-      <img src={image.src} alt={image.alt} className="flex h-auto w-full items-center justify-center rounded-md bg-gray-200 text-4xl font-bold" />
+      <Image placeholder="blur" src={image.src} alt={image.alt} className="flex h-auto w-full items-center justify-center rounded-md bg-gray-200 text-4xl font-bold" />
     </div>
   </div>
 )

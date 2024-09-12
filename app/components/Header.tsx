@@ -1,5 +1,6 @@
 import React from "react"
 import { Button, NavLink } from "../types" // Adjust the import path as necessary
+import Link from "next/link";
 
 interface HeaderProps {
   data: {
@@ -12,17 +13,17 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ data }) => {
   return (
-    <header className="sticky inset-x-0 top-0 z-[5000] flex  w-full flex-wrap backdrop-blur-[99999999px] md:flex-nowrap md:justify-start">
+    <header className="sticky inset-x-0 top-0 z-[5000] flex  w-full flex-wrap bg-[#111022] md:flex-nowrap md:justify-start">
       <nav className="relative mx-auto w-full max-w-[85rem] px-4 py-3 sm:px-6 md:flex md:items-center md:justify-between md:gap-3 lg:px-8">
         {/* Logo w/ Collapse Button */}
         <div className="flex items-center justify-between">
-          <a
+          <Link
             className="flex-none text-xl font-semibold text-white focus:opacity-80 focus:outline-none"
             href="/"
             aria-label="Brand"
           >
             {data.companyName}
-          </a>
+          </Link>
 
           {/* Collapse Button */}
           <div className="md:hidden">
@@ -70,26 +71,26 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
           <div className="max-h-[75vh] overflow-hidden overflow-y-auto [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-neutral-500 [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar]:w-2">
             <div className="flex flex-col gap-0.5 py-2 md:flex-row md:items-center md:justify-end md:gap-1 md:py-0">
               {data.navLinks.map((link, index) => (
-                <a
+                <Link
                   key={index}
                   href={link.link}
                   className="flex items-center p-2 text-sm text-gray-300 hover:text-[#fedc78] focus:outline-none"
                 >
                   {/* Add SVG or icon if needed */}
                   {link.text}
-                </a>
+                </Link>
               ))}
 
               {/* Button Group */}
               <div className="relative mt-1 flex flex-wrap items-center gap-x-1.5 before:absolute before:-start-px before:top-1/2 before:block before:h-4 before:w-px before:-translate-y-1/2 before:bg-neutral-700 md:ms-1.5 md:mt-0 md:ps-2.5">
                 {data.buttons.map((button, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={button.link}
                     className="flex  h-8 w-24 items-center justify-center rounded-md border border-transparent text-sm text-gray-300 transition-all duration-500 hover:border-yellow-400 hover:text-[#fedc78] focus:outline-none"
                   >
                     {button.text}
-                  </a>
+                  </Link>
                 ))}
               </div>
               {/* End Button Group */}

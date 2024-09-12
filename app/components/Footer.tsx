@@ -1,5 +1,6 @@
 import React from "react"
 import { NavLink } from "../types"
+import Link from "next/link"
 
 interface FooterProps {
   data: {
@@ -39,9 +40,9 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
               <ul className="space-y-2 text-sm text-gray-400">
                 {data.companyLinks.map((link: NavLink) => (
                   <li key={link.text}>
-                    <a href={link.link} className="font-medium hover:text-[#fedc78]">
+                    <Link href={link.link} className="font-medium hover:text-[#fedc78]">
                       {link.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -53,9 +54,9 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
               <ul className="space-y-2 text-sm text-gray-400">
                 {data.resourceLinks.map((link: NavLink) => (
                   <li key={link.text}>
-                    <a href={link.link} className="font-medium hover:text-[#fedc78]">
+                    <Link href={link.link} className="font-medium hover:text-[#fedc78]">
                       {link.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -94,14 +95,14 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
 
             <div className="flex space-x-4">
               {data.socialLinks.map((link) => (
-                <a
+                <Link
                   key={link.platform}
                   href={link.link}
                   className="font-medium text-gray-400 hover:text-[#fedc78]"
                   aria-label={`Connect on ${link.platform}`}
                 >
                   <i className={`fab fa-${link.platform}`}></i>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

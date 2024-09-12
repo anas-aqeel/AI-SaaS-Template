@@ -1,6 +1,7 @@
 import React from "react"
 import { Data, TeamSectionMember } from "../../../types"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 interface TeamSectionProps {
   data: Data["team"]
@@ -24,8 +25,9 @@ const TeamSection: React.FC<TeamSectionProps> = ({ data }) => {
                 className="flex flex-col rounded-xl p-4 md:p-6 border border-[#3C3C77] "
               >
                 <div className="flex items-center gap-x-4">
-                  <img
+                  <Image
                     className="rounded-full w-20 h-20"
+                    placeholder="blur"
                     src={member.image.src}
                     alt={member.image.alt}
                   />

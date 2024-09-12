@@ -27,8 +27,7 @@ const Header = () => {
         />
         <button className="size-10 rounded-full text-neutral-400 hover:text-white focus:outline-none">
           <Image
-            height={"40"}
-            width={"40"}
+            placeholder="blur"
             className="size-10 rounded-full"
             src="https://avatars.githubusercontent.com/u/71166989?v=4"
             alt=""

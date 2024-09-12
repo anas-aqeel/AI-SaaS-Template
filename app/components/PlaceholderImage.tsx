@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react"
 
 interface PlaceholderImageProps {
@@ -7,7 +8,7 @@ interface PlaceholderImageProps {
 const PlaceholderImage: React.FC<PlaceholderImageProps> = ({ data }) => {
   return (
     <section className="mx-auto max-w-6xl p-4 pt-2 md:p-12">
-      <img src={data.src} alt={data.alt} className="flex h-auto w-full items-center justify-center rounded-md bg-gray-300 text-4xl font-bold" />
+      <Image placeholder="blur" src={data.src} alt={data.alt} className="flex h-auto w-full items-center justify-center rounded-md bg-gray-300 text-4xl font-bold" />
     </section>
   )
 }
